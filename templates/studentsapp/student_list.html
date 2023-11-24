@@ -1,0 +1,3 @@
+{% for student_id, student in students %}
+  <p>{{ student.full_name }} - Курс: {{ student.course }} <a href="{% url 'student_detail' student_id %}">Подробнее</a></p>
+{% endfor %}
